@@ -1,0 +1,7 @@
+chmod +x gradlew
+
+./gradlew docker
+
+./gradlew docker dockerRun
+
+docker stop jenkins-demo
