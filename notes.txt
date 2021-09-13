@@ -5,3 +5,9 @@ chmod +x gradlew
 ./gradlew docker dockerRun
 
 docker stop jenkins-demo
+
+./gradlew dockerStop
+
+./gradlew build docker dockerRun
+
+docker exec jenkins-demo docker ps

@@ -16,6 +16,7 @@ pipelineJob('theme-park-job') {
                         url 'https://github.com/anupamp22/spring-boot-api-example.git'
                     }
                     branch 'master'
+                    scriptPath('Jenkinsfile-docker')
                 }
             }
         }
