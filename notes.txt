@@ -11,3 +11,5 @@ docker stop jenkins-demo
 ./gradlew build docker dockerRun
 
 docker exec jenkins-demo docker ps
+
+./gradlew docker dockerRun

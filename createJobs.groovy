@@ -22,3 +22,19 @@ pipelineJob('theme-park-job') {
         }
     }
 }
+
+pipelineJob('theme-park-job-aws') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/anupamp22/spring-boot-api-example.git'
+                    }
+                    branch 'master'
+                    scriptPath('Jenkinsfile-aws')
+                }
+            }
+        }
+    }
+}
